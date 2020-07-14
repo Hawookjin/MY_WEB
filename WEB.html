@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>KBL_ANV</title>
+
+    <link rel="stylesheet" href="C:\Users\user\Desktop\pro\WEBCSS.css" type="text/css">
+
+    <!-- 차트 생성 함수 -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['팀 성적', 'Win', 'Defeat'],
+          ['서울 SK 나이츠', 28, 15],
+          ['원주 DB 프로미', 28, 15],
+          ['안양 KGC 인삼공사', 26, 17],
+          ['전주 KCC 이지스', 23, 19],
+          ['인천 전자랜드 엘리펀츠', 21,21 ],
+          ['부산 KT 소닉붐', 21, 22],
+          ['서울 삼성 썬더스', 19, 24],
+          ['울산 현대 모비스 피버스', 18, 24],
+          ['창원 LG 세이커스', 16, 26],
+          ['고양 오리온 오리온스', 13, 30],
+        ]);
+
+        var options = {
+          chart: {
+            title: 'KBL_TEAM',
+            subtitle: 'WINING & LOSE',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+    <body>
+ <p><h1>KOREA BASKETBALL LEAGUE - Analysis and Visualization</h1></p>
+    <table class="blueone">
+      <tbody>
+        <th>순위</th>
+        <th>팀</th>
+        <th>승</th>
+        <th>패</th>
+        <th>승률</th>
+        <th>게임차</th>
+        <th>연속</th>
+        <th>홈</th>
+        <th>원정</th>
+
+      				<tr>
+      					<td>1</td>
+      					<td>서울 SK 나이츠 </td>
+      					<td>28</td>
+      					<td>15</td>
+      					<td>0.651</td>
+      					<td>0</td>
+      					<td>5연승</td>
+      					<td>17-4</td>
+      					<td>11-11</td>
+      				</tr>
+
+      				<tr>
+      					<td>1</td>
+      					<td>원주 DB 프로미 </td>
+      					<td>28</td>
+      					<td>15</td>
+      					<td>0.651</td>
+      					<td>0</td>
+      					<td>3연승</td>
+      					<td>14-8</td>
+      					<td>14-7</td>
+      				</tr>
+
+      				<tr>
+      					<td>3</td>
+      					<td>안양 KGC 인삼공사 </td>
+      					<td>26</td>
+      					<td>17</td>
+      					<td>0.605</td>
+      					<td>2</td>
+      					<td>1연승</td>
+      					<td>14-8</td>
+      					<td>12-9</td>
+      				</tr>
+
+      				<tr>
+      					<td>4</td>
+      					<td>전주 KCC 이지스 </td>
+      					<td>23</td>
+      					<td>19</td>
+      					<td>0.548</td>
+      					<td>4.5</td>
+      					<td>1연승</td>
+      					<td>12-8</td>
+      					<td>11-11</td>
+      				</tr>
+
+      				<tr>
+      					<td>5</td>
+      					<td>인천 전자랜드 엘리펀츠 </td>
+      					<td>21</td>
+      					<td >21</td>
+      					<td >0.500</td>
+      					<td>6.5</td>
+      					<td>1연패</td>
+      					<td>11-10</td>
+      					<td>10-11</td>
+      				</tr>
+
+      				<tr>
+      					<td>6</td>
+      					<td>부산 KT 소닉붐 </td>
+      					<td>21</td>
+      					<td>22</td>
+      					<td>0.488</td>
+      					<td>7</td>
+      					<td>2연패</td>
+      					<td>12-9</td>
+      					<td>9-13</td>
+      				</tr>
+
+      				<tr>
+      					<td>7</td>
+      					<td>서울 삼성 썬더스 </td>
+      					<td>19</td>
+      					<td>24</td>
+      					<td>0.442</td>
+      					<td>9</td>
+      					<td>1연승</td>
+      					<td>10-10</td>
+      					<td>9-14</td>
+      				</tr>
+
+      				<tr>
+      					<td>8</td>
+      					<td>울산 현대모비스 피버스 </td>
+      					<td>18</td>
+      					<td>24</td>
+      					<td>0.429</td>
+      					<td>9.5</td>
+      					<td>2연패</td>
+      					<td>6-14</td>
+      					<td>12-10</td>
+      				</tr>
+
+      				<tr>
+      					<td>9</td>
+      					<td>창원 LG 세이커스 </td>
+      					<td>16</td>
+      					<td>26</td>
+      					<td>0.381</td>
+      					<td>11.5</td>
+      					<td>2연패</td>
+      					<td>7-15</td>
+      					<td>9-11</td>
+      				</tr>
+
+      				<tr>
+      					<td>10</td>
+      					<td>고양 오리온 오리온스 </td>
+      					<td>13</td>
+      					<td>30</td>
+      					<td>0.302</td>
+      					<td>15</td>
+      					<td>1연패</td>
+      					<td>8-16</td>
+      					<td>5-14</td>
+      				</tr>
+
+      				</tbody>
+</table>
+<br>
+<a href="TEAM_PlAYER.html"><input type="button" class="button" value="PlAYER"></a>
+<div><br></div>
+<div id="columnchart_material" style="width: 1500px; height: 1000px;"></div>
+  </body>
+</html>

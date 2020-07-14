@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body
+{
+  font-family: 'Black Han Sans', sans-serif;
+}
+div.ex
+{
+  border: 1;
+  border-style: solid;
+  border-color: black;
+  margin-left: 29%;
+  color: black;
+  line-height: 36px;
+}
+div.dark_ex
+{
+  border: 1;
+  border-style: solid;
+  border-color: white;
+  margin-left: 29%;
+  color: white;
+  line-height: 36px;
+}
+div.movie
+{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+p
+{
+  font-size: 20px;
+}
+div.kim_jang
+{
+  border: 1;
+  border-style: solid;
+  border-color: black;
+  margin-left: 32%;
+  color: black;
+  line-height: 36px;
+}
